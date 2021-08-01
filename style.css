@@ -1,0 +1,124 @@
+.app {
+    display:grid;
+    grid-template-columns: 250px 1fr 250px;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+
+}
+header{
+    grid-row: 1 ;
+    grid-column: 1 / 4 ;
+    background-color: white;
+    font-size: larger;
+    padding: 5px;   
+    font-size: 250%;
+    text-align: center;
+}
+footer{
+    grid-row: 3;
+    grid-column: 1 / 4;
+    background-color: white;
+    font-size: small;
+    padding: 5px;
+    text-align: center;
+    font-size: 200%;
+}
+
+.left-nav{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px;
+    box-sizing: border-box ;   
+    font-size: larger;
+    align-items: center;
+    background-color: white;
+}
+
+.content{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: grey;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.money{
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+button{
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+}
+
+section.memory{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+section.memory button{
+    background-color: yellow;
+    border-radius: 20px;
+    height: 30px;
+    width: 140px;
+    box-sizing: border-box;
+  }
+
+  section.operations{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    grid-gap: 25px;
+  }
+
+  section.operations button{
+    background-color: orange;
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+  }
+
+  section.digits{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    justify-content: center;
+    grid-gap: 25px;
+    padding: 10px;
+  }
+
+  section.digits button{
+    background-color: lightgray;
+    border-radius: 25px;
+    height: 40px;
+    width: 90px;
+    box-sizing: border-box;
+  }
+
+  section.operations button.equals{
+    background-color: orangered;
+  }
+
+  div.held-label{
+    background-color: aquamarine;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 75px;
+    border: 5px solid blue;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 24px;
+    font-family: 'Courier New', monospace;
+  }
