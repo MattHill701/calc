@@ -1,0 +1,17 @@
+html {
+  background-color: black;
+}
+
+.App {
+  font-family: monospace;
+  text-align: center;
+  color: green;
+}
+
+fieldset {
+  background-color: burlywood;
+}
+
+button {
+  margin: 1mm;
+}
